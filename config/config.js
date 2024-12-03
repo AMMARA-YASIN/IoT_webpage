@@ -4,19 +4,19 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "SafeNet IoT",
   links: [
     {
       title: "About",
       link: "#about",
     },
     {
-      title: "Projects",
-      link: "#projects",
+      title: "Research",
+      link: "#research",
     },
     {
-      title: "Contact",
-      link: "#contact",
+      title: "Publications",
+      link: "#publications",
     },
     {
       title: "Links",
@@ -29,25 +29,25 @@ export const navigation = {
   ],
 }
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "UCL SafeNet IoT",
+  description: "PLACEHOLDER: description ",
   image: profile.src,
   buttons: [
     {
-      title: "Contact Me",
+      title: "Contact Us",
       link: "#contact",
       isPrimary: true,
     },
-    {
-      title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-      isPrimary: false,
-    },
+    //{
+    //  title: "Resume",
+    //  link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    //  isPrimary: false,
+    //},
   ],
 }
 
 export const about = {
-  title: "Who I am",
+  title: "Who We Are",
   description: [
     "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
     "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
@@ -56,7 +56,7 @@ export const about = {
 }
 
 export const work = {
-  title: "What I do",
+  title: "Research",
   cards: [
     {
       title: "Mobile App Development",
@@ -72,7 +72,8 @@ export const work = {
 }
 
 export const projects = {
-  title: "Projects",
+  //note: this title isn't updating hmm - staying as projects
+  title: "Events",
   cards: [
     {
       title: "StarBook",
@@ -135,11 +136,13 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
+  title: "UCL SafeNet IoT",
+  //EDIT ME
   description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
   image: profile.src,
 }
 
+//EDIT ME 
 export const links = {
   image: profile.src,
   title: "@hashirshoaeb",
