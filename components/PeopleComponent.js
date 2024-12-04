@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faEnvelope, faWikipediaW, faGoogleScholar, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-// Import the Card component from the draft page
 import { Card } from './Work'; // Assuming the draft components are in a separate file
 import { Nav } from './Navbar'; // Replace with the actual path to Nav.js
 

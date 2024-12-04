@@ -1,5 +1,5 @@
 
-import profile from './profile.png';
+import profile from './test.jpeg';
 
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-solid-svg-icons';
@@ -45,15 +45,15 @@ export const intro = {
   image: profile.src,
   buttons: [
     {
-      title: "Contact Us",
+      title: "Events",
       link: "#contact",
       isPrimary: true,
     },
-    //{
-    //  title: "Resume",
-    //  link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-    //  isPrimary: false,
-    //},
+    {
+      title: "Contact Us",
+      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      isPrimary: false,
+    },
   ],
 }
 
@@ -61,33 +61,18 @@ export const about = {
   title: "Who We Are",
   description: [
     "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
+    <img src="path/to/your/image.jpg" alt="Image description" />, // Add an image here
     "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
     "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
   ],
-}
-
-export const work = {
-  title: "Research",
-  cards: [
-    {
-      title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
-      icons: null,
-    },
-    {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
-      icons: null,
-    }
-  ],
-}
+};
 
 export const projects = {
   //note: this title isn't updating hmm - staying as projects
-  title: "Events",
+  title: "Research",
   cards: [
     {
-      title: "INSERT EVENT",
+      title: "INSERT TITLE",
       description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
       icons: [
         {
@@ -101,7 +86,7 @@ export const projects = {
       ]
     },
     {
-      title: "INSERT EVENT",
+      title: "INSERT TITLE",
       description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
       icons: [
         {
@@ -115,7 +100,7 @@ export const projects = {
       ]
     },
     {
-      title: "INSERT EVENT",
+      title: "INSERT TITLE",
       description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
       icons: [
         {
@@ -124,6 +109,22 @@ export const projects = {
         },
       ]
     },
+  ],
+}
+
+export const work = {
+  title: "Events",
+  cards: [
+    {
+      title: "Event A",
+      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+      icons: null,
+    },
+    {
+      title: "Event B",
+      description: "I create responsive static websites using Reactjs.",
+      icons: null,
+    }
   ],
 }
 
