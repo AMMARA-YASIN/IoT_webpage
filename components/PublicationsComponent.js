@@ -50,46 +50,48 @@ function PublicationsComponent() {
   return (
     <div>
       <Nav {...navigationData} />
-      <div className="bg-secondary py-5 px-5">
-        <h1 className="text-primary fw-bold display-3">Publications</h1>
-        <p className="text-black">INSERT DESCRIPTION for publications section here.</p>
+      <div id="publications" className="bg-secondary py-5 px-5">
+        <div className="container">
+          <h1 className="text-primary fw-bold">Publications</h1>
+          <p className="text-black">INSERT DESCRIPTION for publications section here.</p>
 
-        {publications.map((publication) => (
-          <div key={publication.title} className="mb-5">
-            <div className={`bg-secondary p-3 rounded ${publication.color}`}> {/* Container for first subheading */}
-              <h2 className="text-primary fw-bold">{publication.title}</h2>
-              {publication.links && (
-                <ul>
-                  {publication.links.map((link) => (
-                    <li key={link.title}>
-                      <a href={link.href} target="_blank" rel="noopener noreferrer" className={publication.color}>
-                        {link.title}
-                      </a>
-                    </li>
+          {publications.map((publication) => (
+            <div key={publication.title} className="mb-5">
+              <div className={`bg-secondary p-3 rounded ${publication.color}`}> {/* Container for first subheading */}
+                <h2 className="text-primary fw-bold">{publication.title}</h2>
+                {publication.links && (
+                  <ul>
+                    {publication.links.map((link) => (
+                      <li key={link.title}>
+                        <a href={link.href} target="_blank" rel="noopener noreferrer" className={publication.color}>
+                          {link.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              {publication.years && (
+                <div className={`bg-primary p-3 rounded text-white ${publication.color}`}> {/* Container for second subheading */}
+                  {publication.years.map((year) => (
+                    <div key={year.year}>
+                      <h3 className="text-white">{year.year}</h3>
+                      <ul>
+                        {year.links.map((link) => (
+                          <li key={link.title}>
+                            <a href={link.href} target="_blank" rel="noopener noreferrer" className={publication.color}>
+                              {link.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
-                </ul>
+                </div>
               )}
             </div>
-            {publication.years && (
-              <div className={`bg-primary p-3 rounded text-white ${publication.color}`}> {/* Container for second subheading */}
-                {publication.years.map((year) => (
-                  <div key={year.year}>
-                    <h3 className="text-white">{year.year}</h3>
-                    <ul>
-                      {year.links.map((link) => (
-                        <li key={link.title}>
-                          <a href={link.href} target="_blank" rel="noopener noreferrer" className={publication.color}>
-                            {link.title}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

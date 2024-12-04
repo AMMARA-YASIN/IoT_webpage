@@ -13,14 +13,19 @@ function LabComponent() {
       { title: "Resources", link: "/resources" },
       { title: "Contact", link: "/contact" }
     ],
-  };
+  }
+
   return (
     <div>
       <Nav {...navigationData} />
-      return (
-      <div>
-        <h1>Lab</h1>
-        <p>I am a passionate web developer with a strong background in...</p>
+      <div id="Lab" className="bg-secondary py-5 px-5">
+        <div className="container">
+          <h1 className="text-primary fw-bold">Lab</h1>
+          <p>DESCRIPTION HERE.</p>
+          <div className="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0fg0acuRbUA?si=whABsYVy-sVgbc2S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

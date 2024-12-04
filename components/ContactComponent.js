@@ -16,9 +16,9 @@ const ContactComponent = () => {
   return (
     <div>
       <Nav {...navigationData} />
-      <div className="bg-secondary py-5 px-5">
+      <div id="Contact Us" className="bg-secondary py-5 px-5">
         <div className="container">
-          <h1 className="text-primary fw-bold display-3">Contact Us</h1>
+          <h1 className="text-primary fw-bold">Contact Us</h1>
           <p>Feel free to reach out with any questions or inquiries.</p>
 
           <div className="row">
