@@ -1,5 +1,6 @@
 
 import profile from './profile.png';
+
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -9,7 +10,6 @@ export const navigation = {
   links: [
     {
       title: "People",
-      //maybe i need to change this link so it is a whole seperate page 
       link: "/people",
     },
     {
@@ -87,7 +87,7 @@ export const projects = {
   title: "Events",
   cards: [
     {
-      title: "StarBook",
+      title: "INSERT EVENT",
       description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
       icons: [
         {
@@ -101,7 +101,7 @@ export const projects = {
       ]
     },
     {
-      title: "QuranTalk",
+      title: "INSERT EVENT",
       description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
       icons: [
         {
@@ -115,7 +115,7 @@ export const projects = {
       ]
     },
     {
-      title: "Portfolio",
+      title: "INSERT EVENT",
       description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
       icons: [
         {
