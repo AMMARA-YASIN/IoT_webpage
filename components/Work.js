@@ -43,20 +43,30 @@ export const Projects = ({ title, cards }) => {
 	);
 }
 
-export const Card = ({ title, description, icons }) => {
+export const Card = ({ title, description, content, icons }) => {
 	return (
 		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
 			<h4 className="text-primary">{title}</h4>
 			<p className="text-dark">{description}</p>
+
+
+			{content && (
+				<div className="card-content">
+					<p style={{ color: 'lightgray', fontStyle: 'italic' }}>{content}</p>
+				</div>
+			)}
+
 			<div className="text-end">
 				{icons && icons.map((value, index) => (
 					<Link key={index} href={value.link}>
 						<a target="_blank" rel="noreferrer">
-							<FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="2x" />
+							<FontAwesomeIcon
+								className="icon-style mx-1" icon={value.icon} size="2x" />
 						</a>
 					</Link>
 				))}
 			</div>
 		</div>
+
 	);
-}
+};

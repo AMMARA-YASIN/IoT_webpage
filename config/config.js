@@ -2,14 +2,15 @@
 import profile from './profile.png';
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const navigation = {
   name: "SafeNet IoT",
   links: [
     {
-      title: "About",
+      title: "People",
       //maybe i need to change this link so it is a whole seperate page 
-      link: "/about-us",
+      link: "/people",
     },
     {
       title: "Research",
