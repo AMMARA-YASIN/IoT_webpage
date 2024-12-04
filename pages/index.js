@@ -6,7 +6,14 @@ import { Footer, Contact } from '../components/Footer';
 import { about, contact, intro, navigation, projects, SEO, work } from '../config/config';
 import { Header } from '../components/Header';
 
+import AboutMe from '../components/AboutUsComponent';
+
 export default function Home() {
+  const updatedLinks = [
+    //...navigation.links, // Spread existing links to preserve them
+    { href: '/about-us', label: 'About Us' }, // Add the new link to AboutUs
+  ];
+
   return (
     <Fragment>
       <Header seo={SEO} />
@@ -23,6 +30,7 @@ export default function Home() {
       <About
         title={about.title}
         description={about.description}
+
       />
       <Skills
         title={work.title}

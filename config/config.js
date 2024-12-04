@@ -8,23 +8,33 @@ export const navigation = {
   links: [
     {
       title: "About",
-      link: "#about",
+      //maybe i need to change this link so it is a whole seperate page 
+      link: "/about-us",
     },
     {
       title: "Research",
-      link: "#research",
+      link: "/research",
     },
     {
       title: "Publications",
-      link: "#publications",
+      link: "/publications",
     },
     {
-      title: "Links",
-      link: "/links",
+      title: "Events",
+      link: "/events",
     },
     {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
+      title: "Lab",
+      link: "/lab",
+    },
+    {
+      title: "Resources",
+      link: "/resources"
+
+    },
+    {
+      title: "Contact",
+      link: "/contact"
     }
   ],
 }

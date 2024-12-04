@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 
 export const Nav = ({ title, links }) => {
-
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -18,7 +17,8 @@ export const Nav = ({ title, links }) => {
         </Link>
         <button
           className="custom-toggler navbar-toggler"
-          type="button" data-toggle="collapse"
+          type="button"
+          data-toggle="collapse"
           data-target="#navbarsExample09"
           aria-controls="navbarsExample09"
           aria-expanded={!isNavCollapsed ? true : false}
@@ -34,7 +34,7 @@ export const Nav = ({ title, links }) => {
         >
           <div className="navbar-nav">
             {links.map((value, index) => (
-              <Link key={index} href={value.link} >
+              <Link key={index} href={value.link}>
                 <a className="nav-link">{value.title}</a>
               </Link>
             ))}
